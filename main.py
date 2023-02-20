@@ -7,7 +7,7 @@ WIDTH = 600
 
 
 def get_weather(city):
-    weather_key = '87168edc2f970b6c6c6ed1ff8ef23508'
+    weather_key = 'YOUR_API_KEY'
     url = "https://api.openweathermap.org/data/2.5/weather"
     params = {'APPID': weather_key, 'q': city, 'units': 'metric'}
     response = requests.get(url, params=params)
